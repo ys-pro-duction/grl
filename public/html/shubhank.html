@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+    Golden Bhavishya Rashi - Chart
+</title>
+    <link href="../css/jquery-ui.css" rel="stylesheet">
+    <link href="/resources/demos/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import {initializeApp} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import {getAnalytics} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyClMrs2Gwbrb-s17_KPhIFqoC2ToAzVD60",
+            authDomain: "golden2admin.firebaseapp.com",
+            projectId: "golden2admin",
+            storageBucket: "golden2admin.appspot.com",
+            messagingSenderId: "211140986909",
+            appId: "1:211140986909:web:11a60ea405df3ec7a85ef4",
+            measurementId: "G-BYT65MTPSG"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+
+    </script>
+    <style>
+        table {
+            color: #333; /* Lighten up font color */
+            font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+            width: 1200px;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        td, th {
+            border: 1px solid #CCC;
+            height: 30px;
+        }
+
+        /* Make cells a bit taller */
+
+        th {
+            background: #F3F3F3; /* Light grey background */
+            font-weight: bold; /* Make sure they're bold */
+            font-size: large;
+        }
+
+        td {
+            background: #FAFAFA; /* Lighter grey background */
+            text-align: center; /* Center our text */
+            font-weight: bold; /* Make sure they're bold */
+
+        }
+    </style>
+</head>
+<body>
+
+<form action="./shubhank.html" id="form1" method="post">
+    <div class="aspNetHidden">
+        <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden"
+               value="/wEPDwUKMTY3MDQ0MzEwMg9kFgICAw9kFgICBQ9kFgICAQ88KwARAwAPFgQeC18hRGF0YUJvdW5kZx4LXyFJdGVtQ291bnRmZAEQFgAWABYADBQrAABkGAEFBGdyZGEPPCsADAEIZmQbvAeUfOlgD+i0lN+g1tq8o/d12rr0cne4DWLPvGf5Ww==">
+    </div>
+
+    <!--    <div class="aspNetHidden">-->
+
+    <!--        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A55C2261">-->
+    <!--        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"-->
+    <!--               value="/wEdAAP015zf6prkm4ym08xU5h07apXPo1ZMCoLLOTLusDc3inXv6vE479O8w0ce+UBGBMwAudo1f/lwLRbdkEpX/N+Qklh9CUXOodkkJSMLt5EHLA==">-->
+    <!--    </div>-->
+    <div>
+
+        <input id="datepicker" name="datepicker" type="text" value="{{%date%}}">
+
+        <input id="btsub" name="btsub" type="submit" value="Submit">
+        <img alt="Golden Bhavishya Rashi 60Subhank" src="../images/golden%20bhavishya%20rashi%20images/601.png" style="height:50px;width:50px;margin-left:28%">
+        <img alt="Golden Bhavishya Rashi 70Subhank" src="../images/golden%20bhavishya%20rashi%20images/70gh.png" style="height:50px;width:50px;margin-left:28%">
+
+
+        <div border="0" class="rounded_corners" id="Panel2" style="overflow:auto;">
+
+            <div class="tableDiv" id="div1">
+
+                <selectedrowstyle backcolor="ActiveCaption">
+                    <div>
+                        <table cellspacing="0" class="table responsive" id="grda"
+                               style="width:100%;border-collapse:collapse;">
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </selectedrowstyle>
+            </div>
+
+        </div>
+        <script>
+            const nodata = `<tr><td colspan="3"><span id="grda_lblNoDataFound" style="font-size:Medium;font-weight:bold;">No Data Found.</span></td></tr>`
+            const tbody = document.getElementById("tbody")
+            const data = JSON.parse('{{%data%}}')
+            if (data.length === 0) {
+                tbody.innerHTML = nodata
+            } else {
+                const head = `<tr class="FixedHeader" style="color:Black;font-weight:bold;"><th scope="col">ShubhankTime</th><th scope="col">60Shubhank</th><th scope="col">70Shubhank</th></tr>`
+                let numberRow = ""
+                for (let i = 0; i < data.length; i++) {
+                    numberRow += `<tr align="left"><td>${data[i].hr}:${data[i].min}</td><td>${data[i].n60}</td><td>${data[i].n70}</td></tr>`
+                }
+                tbody.innerHTML = head + numberRow
+            }
+        </script>
+
+    </div>
+</form>
+
+
+</body>
+</html>

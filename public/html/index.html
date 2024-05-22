@@ -1,0 +1,582 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head></head>
+
+<title>Golden Bhavishya Rashi</title>
+<meta content="Explore Golden Bhavishya Rashi for accurate predictions, results, and lottery insights. Unlock the mysteries of your destiny with personalized horoscopes and discover your fortune with our astrology readings."
+      name="description">
+<meta content="Golden Bhavishya Rashi, Golden Bhavishya Rashi result, Golden Bhavishya Rashi lottery, Bhavishya Rashi predictions, astrology readings, personalized horoscopes, future predictions, fortune telling, lucky numbers, zodiac signs"
+      name="keywords">
+<meta content="Golden Bhavishya Rashi, Bhavishya Rashi predictions, astrology readings, personalized horoscopes, future predictions, fortune telling, lucky numbers, astrology lottery, zodiac signs, celestial guidance"
+      name="keywords">
+
+<script src="https://code.jquery.com/jquery-1.5.js" type="text/javascript"></script>
+
+<script src="../js/golden%20bhavishya%20rashi%20jss2.js" type="text/javascript"></script>
+<link href="../css/dtPNiq3eE8ai.css" rel="stylesheet" type="text/css">
+
+<script src="../js/golden%20bhavishya%20rashi%20js1.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script>
+
+
+<script src="../js/K9dA9j6wjLoJ.js"></script>
+
+
+<link href="../css/amRupc2P0bXI.css" rel="stylesheet">
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import {getAnalytics} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyClMrs2Gwbrb-s17_KPhIFqoC2ToAzVD60",
+        authDomain: "golden2admin.firebaseapp.com",
+        projectId: "golden2admin",
+        storageBucket: "golden2admin.appspot.com",
+        messagingSenderId: "211140986909",
+        appId: "1:211140986909:web:11a60ea405df3ec7a85ef4",
+        measurementId: "G-BYT65MTPSG"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+<script>
+
+
+    var city = "";
+    var lat = "";
+    var lng = "";
+    var zip = "";
+    var ipinfo = "";
+    var country = "";
+    var version = "";
+    var region = "";
+    var org = "";
+    var browsername = "";
+    var browserversion = "";
+    var osname = "";
+    var osversion = "";
+    var device = "";
+
+    function getHttpRequest(url, callback) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                callback(xmlHttp.response);
+            }
+        }
+        xmlHttp.open("GET", url, true);
+        xmlHttp.send(null);
+    }
+
+    var myVar;
+
+    function validate(id) {
+        var regex = /^[a-zA-Z ]{4,20}$/;
+
+
+        if (regex.test(id)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    $(function () {
+        flatpickr("#datepicker", {
+
+            "enableTime": true,
+
+            "enableSecond": true
+        });
+
+    });
+
+
+    function Result() {
+
+        window.open("shubhank.html", '_blank');
+
+    }
+
+    function getToken() {
+
+        if (document.getElementById("txtmobile").value == "") {
+            alert("Please Enter Mobileno");
+            return;
+        }
+        if (document.getElementById("tname").value == "") {
+            alert("Please Enter Name");
+            return;
+        }
+        var aname = validate(document.getElementById("tname").value);
+        if (aname == false) {
+            alert("Please Enter Valid Name");
+            return;
+        }
+        var e = document.getElementById("trashi");
+        var strUser = e.options[e.selectedIndex].value;
+        if (strUser == "Select") {
+            alert("Please Enter Rashi");
+            return;
+        }
+        if (document.getElementById("datepicker").value == "") {
+            alert("Please Enter Birthdate And Time");
+            return;
+        }
+
+        if (document.getElementById("ch1").checked == false) {
+            alert("Please Check on  i Agree to Continue");
+            return;
+        }
+
+
+        if (document.getElementById("txtloc").value == "") {
+            alert("Please Enter Location");
+            return;
+        }
+
+        var aname = validate(document.getElementById("txtloc").value);
+        if (aname == false) {
+            alert("Please Enter Valid Location");
+
+        }
+    }
+
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode == 13) {
+            calc();
+        }
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+
+    $(document).keydown(function (e) {
+
+        isNumber(e);
+    });
+
+    var tickname = ["08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00", "14:15", "14:30", "14:45", "15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00", "21:15", "21:30", "21:45", "22:00"];
+
+    function zeroPad(num, places) {
+        var zero = places - num.toString().length + 1;
+        return Array(+(zero > 0 && zero)).join("0") + num;
+    }
+
+    $(document).ready(function () {
+
+        if (document.getElementById('visitcount').innerHTML == "") {
+            // getGeoInfo();
+        } else {
+
+            document.getElementById('visitcount').innerHTML = localStorage.token;
+        }
+
+        GetDateTime()
+
+    });
+</script>
+<body style="background-size: 120% 120%;">
+
+<table border="0" width="99%">
+    <tbody>
+    <tr>
+        <td style="width:20%">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <img alt="Golden Bhavishya Rashi" src="https://i.ibb.co/VTJbZyH/ewk8-LDcc-Cdyb.png"
+                             style="background-image:url(https://i.ibb.co/VTJbZyH/ewk8-LDcc-Cdyb.png);background-repeat:no-repeat;background-position: center top;background-size:200px 250px;   width: 200px; height: 250px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/l5GUeTuem6BO.png);background-repeat:no-repeat;background-size:200px 40px;background-position: center center;   width: 200px; height: 80px;">
+                        <span id="RemainTime"
+                              style="font-size: 12pt; font-weight: bold;display:none;color:Yellow"> </span>
+
+                        <span id="NowTime"
+                              style="font-size: 18pt; font-weight: bold;color:Yellow;margin-top:50px"></span>
+                        <input id="hd_nextime" name="hd_nextime" type="hidden">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/L3XYz3IvOd9D.png);background-repeat:no-repeat;background-size:200px 40px; background-position: center center;  width: 200px; height: 48px;">
+                        <span id="TodatyDate" style="font-size: 24pt; font-weight: bold;color:Yellow"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/L3XYz3IvOd9D.png);background-repeat:no-repeat;background-size:200px 40px; background-position: center center;  width: 200px; height: 80px;">
+                        <span id="NextDrowTime"
+                              style="font-size: 19pt; font-weight: bold;color:Yellow;margin-top:60px"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="FREE Golden Bhavishya Rashi GIFT" src="../images/golden%20bhavishya%20rashi%20images/iAp2f4Tzyrzc.png"
+                             style="background-image:url(../images/golden%20bhavishya%20rashi%20images/iAp2f4Tzyrzc.png);background-repeat:no-repeat;background-size:150px 150px;background-position: center center;   width: 150px; height: 150px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 230px; height: 30px;color:Yellow;font-size:24px">
+
+                        FREE GIFT...FREE Golden Bhavishya Rashi GIFT For First 60 Lucky Voucher Winner
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="FREE Golden Bhavishya Rashi GIFT" src="../images/golden%20bhavishya%20rashi%20images/B4dCWbKSwG1U.png"
+                             style="background-image:url(../images/golden%20bhavishya%20rashi%20images/B4dCWbKSwG1U.png);background-repeat:no-repeat;background-size:150px 150px;background-position: center center;   width: 150px; height: 150px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 230px; height: 30px;color:Yellow;font-size:24px">
+                        FREE GIFT...FREE Golden Bhavishya Rashi GIFT For First 70 Lucky Voucher Winner
+                        GIFT
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/GQkdUCOuoCoq.png);background-repeat:no-repeat;background-size:200px 15px; background-position: center top;   width: 200px; height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="Golden Bhavishya Rashi Contact" src="../images/golden%20bhavishya%20rashi%20images/exJkVnonMXNU.jpg"
+                             style="background-image:url(../images/golden%20bhavishya%20rashi%20images/exJkVnonMXNU.jpg);background-repeat:no-repeat;background-size:150px 100px; background-position: center top;   width: 200px; height: 100px;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img alt="Golden Bhavishya Rashi Detaits" src="../images/golden%20bhavishya%20rashi%20images/number1.jpg"
+                             style="background-image:url(../images/golden%20bhavishya%20rashi%20images/number1.jpg);background-repeat:no-repeat;background-size:150px 50px; background-position: center top;   width: 200px; height: 50px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="Golden Bhavishya Rashi Detaits" src="../images/golden%20bhavishya%20rashi%20images/number2.1.jpg"
+                             style="background-image:url(../images/golden%20bhavishya%20rashi%20images/number2.1.jpg);background-repeat:no-repeat;background-size:150px 50px; background-position: center top;   width: 200px; height: 50px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="Golden Bhavishya Rashi Detaits" src="../images/golden%20bhavishya%20rashi%20images/number3.jpg"
+                             style="background-image:url(../images/golden%20bhavishya%20rashi%20images/number3.jpg);background-repeat:no-repeat;background-size:150px 50px; background-position: center top;   width: 200px; height: 50px;">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <img alt="Golden Bhavishya Rashi Alternative" src="../images/golden%20bhavishya%20rashi%20images/H7pvJvenAawm.jpg"
+                             style="background-image:url(../images/golden%20bhavishya%20rashi%20images/H7pvJvenAawm.jpg);background-repeat:no-repeat;background-size:150px 50px; background-position: center top;   width: 200px; height: 50px;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="aboutus.htm" target="_blank"> <input
+                                class="bgtime1" style="width: 200px; height: 40px;font-size:30px;margin-top:10px"
+                                type="button" value="About US"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="disclaimer.htm" target="_blank"> <input
+                                class="bgtime1" style="width: 200px; height: 40px;font-size:30px;margin-top:10px"
+                                type="button" value="Disclaimer"></a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </td>
+        <td style="width:79%;">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <marquee style="font-size:xx-large; margin-top:10px;background-color: white;font-family:Tahoma">
+                            <span style="font-weight:bold"> 2024 Update Golden Bhavishya Rashi  <span
+                                    style="font-weight:lighter">    ,For Lucky Shubhank Contact Us  </span></span>
+                        </marquee>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+                <tr>
+
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/XsDMG2pp6TsA.png);background-repeat:no-repeat;background-position: center;background-size:750px 100px; width: 750px; height: 100px;"></td>
+
+
+                </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <div id="dispres" style="overflow:auto;width:750px">
+
+                        </div>
+                    </td>
+
+
+                </tr>
+
+                </tbody>
+            </table>
+
+            <span class="blinking" id="spredic1" style="font-size:24px;color:Yellow;display:none">
+ Please Enter <br>  Lucky No  <br>  &amp; know Astrological Prediction <br>
+ Lucky Coupon Winner  <br>  will Get a Pooja Bracelet
+
+  </span><span id="spredic2" style="font-size:24px;display:none;color:Yellow;">
+   
+  </span>
+            <table>
+
+
+                <tbody>
+                <tr>
+                    <td 420px;text-align:center 750px;="750px;" height:="height:" width:="width:"
+                    "="420px;text-align:center&quot;">
+
+
+                    <span style="font-size:24px; color:Yellow;">Due to Technical issue Live View is Not Available  </span>
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+    <tr>
+
+        <td>
+            <input class="bgtime1" id="btnres" onclick="Result()"
+                   style="width: 200px; height: 50px;font-size:36px;color:yellow" type="button" value="Shubhank">
+        </td>
+        <td>
+        </td>
+        <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/jldiMgZZkiNo.png);background-repeat:no-repeat;background-size:300px 40px;   width: 300px; height: 40px;"></td>
+
+        <td style="color: yellow;"> Visitor:<span id="visitcount"></span></td>
+    </tr>
+    </tbody>
+</table>
+<table>
+
+
+    <tbody>
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" class="caltable">
+                <tbody>
+                <tr>
+                    <td colspan="3">
+                        <img alt="Golden Bhavishya Rashi Luck Number" src="../images/golden%20bhavishya%20rashi%20images/RIqhzeKmcYFa.png" style="background-repeat:no-repeat;background-position: center top;background-size:750px 120px;   width: 750px; height: 120px;">
+                    </td>
+
+
+                </tr>
+
+                <tr>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/9eoLFJgTrN93.png);background-repeat:no-repeat;background-position: center top;background-size:250px 120px;   width: 250px; height: 120px;">
+                        <br>
+                        <img alt="Golden Bhavishya Rashi 60Subhank" src="../images/golden%20bhavishya%20rashi%20images/XMgL3eulBdhq.png" style="height:100px;width:100px;margin-left:70PX">
+                        <br>
+                        <img alt="Golden Bhavishya Rashi 70Subhank" src="../images/golden%20bhavishya%20rashi%20images/jpnhBukTzyw8.png" style="height:100px;width:100px;margin-left:70PX">
+                    </td>
+
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/9eoLFJgTrN93.png);background-repeat:no-repeat;background-position: center top;background-size:250px 120px;   width: 250px; height: 120px;">
+                        <table>
+                            <tbody>
+                            <tr>
+
+
+                                <td style="text-align:center;">
+
+                                    <input id="t_1"
+                                           maxlength="1"
+                                           style="width:35px;height:40px; border-color:Blue;text-align:center;font-size:larger;font-weight:bold;margin-left:10px;"
+                                           type="text">
+                                    <br><br>
+                                    <br><br>
+                                    <input id="Text1"
+                                           maxlength="1"
+                                           style="width:35px;height:40px;border-color:Blue;text-align:center;font-size:larger;font-weight:bold;margin-left:10px;"
+                                           type="text">
+                                </td>
+                                <td style="text-align:center;">
+
+                                    <input id="t_2"
+                                           maxlength="1"
+                                           style="width:35px;height:40px;border-color:Blue;text-align:center;font-size:larger;font-weight:bold;margin-left:10px;"
+                                           type="text">
+                                    <br><br>
+                                    <br><br>
+                                    <input id="Text2"
+                                           maxlength="1"
+                                           style="width:35px;height:40px;border-color:Blue;text-align:center;font-size:larger;font-weight:bold;margin-left:10px;"
+                                           type="text">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/9eoLFJgTrN93.png);background-repeat:no-repeat;background-position: center top;background-size:250px 120px;   width: 250px; height: 120px;">
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/UwkonqKjemjc.png);background-repeat:no-repeat;background-position: center top;background-size:100% 100%;   width: 250px; height: 120px;"></td>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/9eoLFJgTrN93.png);background-repeat:no-repeat;background-position: center top;background-size:250px 120px;   width: 250px; height: 120px;">
+                        <span id="tcode">Verify OTP</span>
+
+                    </td>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/9eoLFJgTrN93.png);background-repeat:no-repeat;background-position: center top;background-size:250px 120px;   width: 250px; height: 120px;">
+                        <br><br>
+                        <input id="t_3"
+                               maxlength="6"
+                               style="width:100px; height:30px; border-color:Blue;margin-left:-50px;font-size:larger;font-weight:bold;"
+                               type="text">
+                        <input class="divCells8" id="t_4"
+                               onclick="calc()" style="color:Yellow;margin-left:10px;font-size:12px;font-weight:bold"
+                               type="button" value="Click here for Predication">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/vmqqbb9IZa1T.png);background-repeat:no-repeat;background-position: center top;background-size:100% 100%;   width: 250px; height: 120px;"></td>
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/9eoLFJgTrN93.png);background-repeat:no-repeat;background-position: center top;background-size:250px 120px;   width: 250px; height: 120px;">
+
+                    </td>
+
+                    <td style="background-image:url(../images/golden%20bhavishya%20rashi%20images/9eoLFJgTrN93.png);background-repeat:no-repeat;background-position: center top;background-size:250px 120px;   width: 250px; height: 120px;"></td>
+
+                </tr>
+                </tbody>
+            </table>
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+<table cellpadding="10px;">
+
+
+    <tbody>
+    <tr>
+        <td>
+            <img alt="Golden Bhavishya Rashi Contact us" src="../images/golden%20bhavishya%20rashi%20images/exJkVnonMXNU.jpg"
+                 style="background-image:url(../images/golden%20bhavishya%20rashi%20images/exJkVnonMXNU.jpg);background-repeat:no-repeat;background-size:250px 150px; background-position: center top;   width: 250px; height: 150px;">
+        </td>
+
+
+        <td colspan="2"
+            style="background-image:url(../images/golden%20bhavishya%20rashi%20images/number4.jpg );background-repeat:no-repeat;background-size:250px 150px; background-position: center top;   width: 250px; height: 150px;"></td>
+    </tr>
+
+    <tr>
+        <td>
+            <span style="color:Yellow">Name :  </span>
+
+
+            <input id="tname" style="width:130px;color:Black" type="text">
+        </td>
+        <td>
+            <span style="color:Yellow"> Mobile</span>
+
+
+            <input id="txtmobile" onkeypress="if(this.value.length==10) return false;" pattern="/^-?\d+\.?\d*$/"
+                   style="width:130px;color:Black" type="number">
+        </td>
+
+
+    </tr>
+
+    <tr>
+        <td>
+            <span style="color:Yellow"> Place :  </span>
+
+
+            <input id="txtloc" style="width:150px;color:Black" type="text" "="">
+        </td>
+        <td>
+            <span style="color:Yellow">Rashi:</span>
+
+            <select id="trashi" style="color:Black;width:140px;text-align:center">
+                <option value="Select">Select</option>
+                <option value="Aries">Aries/मेष</option>
+                <option value="Taurus">Taurus/वृष</option>
+                <option value="Gemini">Gemini/मिथुन</option>
+                <option value="Cancer">Cancer/कर्क</option>
+
+                <option value="Leo">Leo/सिंह</option>
+                <option value="Virgo">Virgo/कन्या</option>
+                <option value="Libra">Libra/तुला</option>
+                <option value="Scorpio">Scorpio/वृश्चिक</option>
+
+                <option value="Sagittarius">Sagittarius/धनु</option>
+                <option value="Capricorn">Capricorn/मकर</option>
+                <option value="Aquarius">Aquarius/कुंभ</option>
+                <option value="Pisces">Pisces/मीन</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+                      <span style="color:Yellow">
+        B.Date/Time:
+        </span>
+            <input id="datepicker" placeholder="Select D/T" readonly="readonly" style="width:200px;color:Black"
+                   type="text">
+        </td>
+        <td>
+            <input id="ch1" type="checkbox"> <span style="color:White;font-size:small"> i agree to the </span> <a
+                href="tc.htm" target="_blank"><span
+                style="color:yellow;font-size:small">Terms &amp; Conditions</span></a>
+
+        </td>
+        <td>
+            <input class="bsub" id="btnsub" onclick="getToken()" style="width: 200px; height: 50px;font-size:36px;"
+                   type="button">
+        </td>
+
+    </tr>
+
+    </tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<!--  Flatpickr  -->
+<link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+</body>
+</html>
