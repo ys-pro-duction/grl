@@ -22,8 +22,8 @@ function GetDateTime() {
             im = im * 10.5;
             td = "<div class='divTable' style='overflow:auto;width:" + im + "%' >"
             td = td + "<div class=divTableBody>";
-            const baseUrlLocImg = window.location.origin + "/images/golden bhavishya rashi images/"
-            td = td + `<div class=divTableRow><div class=divTableCell1> <img alt="Golden Bhavishya Rashi Lottery" src='${baseUrlLocImg}time_1.png'   style='width:60px;height:40px'> </div>`
+            const baseUrlLocImg = window.location.origin + "/images/golden bhavishya lottery/"
+            td = td + `<div class=divTableRow><div class=divTableCell1> <img alt="Golden Bhavishya Lottery" src='${baseUrlLocImg}time_1.png'   style='width:60px;height:40px'> </div>`
             let jm = 2;
             $.each(data, function (key, item) {
                 if (item.lname.toString() == "A") {
@@ -39,17 +39,17 @@ function GetDateTime() {
                 }
             });
 
-            td = td + "</div><div class=divTableRow><div class=divTableCell1><img alt='Golden Bhavishya Rashi 60Subhank' src='601.png'  style= 'height:50px;width:50px;background-color:transparent'/></div>"
+            td = td + "</div><div class=divTableRow><div class=divTableCell1><img alt='Golden Bhavishya Lottery 60Subhank' src='601.png'  style= 'height:50px;width:50px;background-color:transparent'/></div>"
             $.each(data, function (key, item) {
                 if (item.lname.toString() === "A") {
-                    td = td + `<div class=divTableCell1><div class=container> <img alt='Golden Bhavishya Rashi 60Subhank - ${item.nosplayed}' src='${baseUrlLocImg}rnum.png'   style='width:60px;height:40px'> <div class=centered1>` + item.nosplayed + "</div></div></div>"
+                    td = td + `<div class=divTableCell1><div class=container> <img alt='Golden Bhavishya Lottery 60Subhank - ${item.nosplayed}' src='${baseUrlLocImg}rnum.png'   style='width:60px;height:40px'> <div class=centered1>` + item.nosplayed + "</div></div></div>"
                 }
             });
 
-            td = td + "</div><div class=divTableRow> <div class=divTableCell1> <img alt='Golden Bhavishya Rashi 70Subhank' src='images/golden%20bhavishya%20rashi%20images/70gh.png'  style= 'height:50px;width:50px'/> </div>"
+            td = td + "</div><div class=divTableRow> <div class=divTableCell1> <img alt='Golden Bhavishya Lottery 70Subhank' src='images/golden%20bhavishya%20lottery/70gh.png'  style= 'height:50px;width:50px'/> </div>"
             $.each(data, function (key, item) {
                 if (item.lname.toString() === "B") {
-                    td = td + `<div class=divTableCell1><div class=container> <img alt='Golden Bhavishya Rashi 70Subhank - ${item.nosplayed}' src='${baseUrlLocImg}rnum.png'   style='width:60px;height:40px'> <div class=centered1>` + item.nosplayed + "</div></div></div>"
+                    td = td + `<div class=divTableCell1><div class=container> <img alt='Golden Bhavishya Lottery 70Subhank - ${item.nosplayed}' src='${baseUrlLocImg}rnum.png'   style='width:60px;height:40px'> <div class=centered1>` + item.nosplayed + "</div></div></div>"
                 }
             });
             td = td + "</div></div></div>"
